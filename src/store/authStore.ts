@@ -11,7 +11,7 @@ export const useAuthStore = create<AuthState>((set) => ({
   isAuthenticated: false,
   user: null,
   login: (username: string, password: string) => {
-    // Simple authentication
+    
     if (username === 'admin' && password === 'admin123') {
       set({ isAuthenticated: true, user: { username } });
       return true;
